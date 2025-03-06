@@ -1,0 +1,121 @@
+.topbarContainer {
+  width: 100%;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  box-shadow: 0px 1px 0px 0px #0000001a;
+
+  .topbar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    height: 80px;
+    padding: 16px 20px;
+    color: white;
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  .menuSection {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    grid-column: span 1;
+
+    .menuButton {
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+    }
+
+    .textPageContainer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .textPage {
+        color: var(--color-topbar);
+        font-weight: 700;
+        font-size: 16px;
+        white-space: nowrap;
+      }
+    }
+
+    @media screen and (max-width: 915px) {
+      .textPageContainer {
+        display: none;
+      }
+    }
+  }
+
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 1;
+  }
+
+  .userSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 35px;
+    position: relative;
+    grid-column: span 1;
+
+    .notificationButton {
+      cursor: pointer;
+    }
+
+    .userInfo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+
+      .userImage {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+
+      .userName {
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .arrow {
+        font-size: 14px;
+      }
+
+      .iconMobile {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .notificationButton {
+        display: none;
+      }
+
+      .userInfo {
+        .userName {
+          display: none;
+        }
+
+        .iconMobile {
+          display: block;
+        }
+
+        .userImage {
+          display: none;
+        }
+
+        .arrow {
+          display: none;
+        }
+      }
+    }
+  }
+}
