@@ -8,7 +8,7 @@
 1. Clone o repositório:
 
    ```
-   https://github.com/AOdachowoski/predictus_teste_topbar.git
+   git clone https://github.com/AOdachowoski/predictus_teste_topbar.git
    cd predictus_teste_topbar
    ```
 
